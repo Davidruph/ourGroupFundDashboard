@@ -1,0 +1,48 @@
+.bg-sidebar {
+  background: #ffffff !important;
+}
+.text-p-card {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #5f5d5d;
+}
+.text-p-card-large {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 20px;
+  color: #5f5d5d;
+}
+/* Styles for all screens */
+.small-icon {
+  display: none;
+}
+
+/* Styles for small screens only */
+@media (max-width: 767px) {
+  .small-icon {
+    display: block;
+  }
+}
+.menu:hover,
+.menu.active {
+  background-color: #fcf6e6;
+}
+
+.menu:hover object svg path,
+.menu.active object svg path,
+.menu:hover span,
+.menu.active span {
+  color: #e4a200 !important;
+}
+.topbar .dropdown-list .dropdown-header {
+  background-color: #e4a200 !important;
+  border: 1px solid #e4a200 !important;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
