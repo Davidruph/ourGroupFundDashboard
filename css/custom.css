@@ -46,3 +46,32 @@
   padding-bottom: 0.75rem;
   color: #fff;
 }
+.section-header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #5f5d5d;
+}
+.table-head {
+  width: auto;
+  height: auto;
+  background: #eff2f6;
+}
+.th {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #5f5d5d;
+}
+.td {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #5f5d5d;
+}
