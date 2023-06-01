@@ -75,3 +75,31 @@
   line-height: 20px;
   color: #5f5d5d;
 }
+.percentage {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5f5d5d;
+}
+.form-control-range {
+  accent-color: #e4a200;
+}
+.number-heading {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #797778;
+}
+
+.td-checkbox {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  accent-color: #e4a200;
+}

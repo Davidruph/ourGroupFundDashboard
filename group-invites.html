@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Dashboard</title>
+    <title>Group Invites</title>
 
     <!-- Custom fonts for this template-->
     <link
@@ -25,7 +25,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/custom.css" />
-
+    <link
+      rel="stylesheet"
+      href="vendor/datatables/dataTables.bootstrap4.min.css"
+    />
     <!-- Custom styles for this template-->
     <link href="css/app.css" rel="stylesheet" />
   </head>
@@ -40,11 +43,11 @@
         >
           <!-- Sidebar - Brand -->
           <a
-            class="sidebar-brand d-flex align-items-center justify-content-center mb-3"
+            class="sidebar-brand d-flex align-items-center justify-content-center mb-4"
             href="index.html"
           >
             <div class="sidebar-brand-icon small-icon">
-              <i class="fas fa-tachometer-alt text-warning"></i>
+              <i class="fas fa-tachometer-alt"></i>
             </div>
             <div class="sidebar-brand-text mx-3">
               <img src="img/logo.svg" alt="logo" class="img-fluid" />
@@ -55,7 +58,7 @@
           <hr class="sidebar-divider my-0" />
 
           <!-- Nav Item - Dashboard -->
-          <li class="nav-item active menu">
+          <li class="nav-item menu">
             <a class="nav-link" href="index.html">
               <img src="img/dashboard.svg" class="img-fluid" alt="" />
               <span class="text-dark ml-2 mr-2 mb-2">Dashboard</span></a
@@ -70,8 +73,8 @@
             >
           </li>
           <!-- Nav Item - menus -->
-          <li class="nav-item menu">
-            <a class="nav-link" href="group-invites.html">
+          <li class="nav-item active menu">
+            <a class="nav-link" href="#">
               <img src="img/invites.svg" alt="groups" />
               <span class="text-dark ml-2 mr-2 mb-2">Group Invites</span></a
             >
@@ -317,264 +320,40 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
               <!-- Page Heading -->
-              <div
-                class="d-sm-flex align-items-center justify-content-between mb-4"
-              >
-                <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+              <div class="d-flex mb-5">
+                <h1 class="h3 mb-0 text-gray-800">Group Invites</h1>
+                <span class="ml-3 pt-2 number-heading">| 6</span>
               </div>
 
               <!-- Content Row -->
               <div class="row">
-                <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                  <div class="card h-100 border-0 py-2">
-                    <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                        <div class="col mr-2 ml-2">
-                          <img src="img/card-1-icon.svg" alt="" />
-                          <p class="text-p-card pt-3 pb-0">
-                            Total Amount Contributed
-                            <span><img src="img/card-dots.svg" alt="" /></span>
-                          </p>
-                          <h4 class="text-p-card-large">
-                            <img src="img/naira.svg" alt="" /> 20,000.
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                  <div class="card h-100 border-0 py-2">
-                    <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                        <div class="col mr-2 ml-2">
-                          <img src="img/groups-2.svg" alt="" />
-                          <p class="text-p-card pt-3 pb-0">
-                            Project Completion Percentage
-                            <span><img src="img/card-dots.svg" alt="" /></span>
-                          </p>
-                          <h4 class="text-p-card-large">75%</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                  <div class="card border-0 h-100 py-2">
-                    <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                        <div class="col mr-2 ml-2">
-                          <img src="img/card-3-icon.svg" alt="" />
-                          <p class="text-p-card pt-3 pb-0">
-                            Total Amount Collected
-                            <span><img src="img/card-dots.svg" alt="" /></span>
-                          </p>
-                          <h4 class="text-p-card-large">
-                            <img src="img/naira.svg" alt="" /> 20,000.
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Pending Requests Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                  <div class="card border-0 h-100 py-2">
-                    <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                        <div class="col mr-2 ml-2">
-                          <img src="img/card-4-icon.svg" alt="" />
-                          <p class="text-p-card pt-3 pb-0">
-                            My Groups
-                            <span><img src="img/card-dots.svg" alt="" /></span>
-                          </p>
-                          <h4 class="text-p-card-large">
-                            <img src="img/naira.svg" alt="" /> 20.
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row g-3">
-                <div class="col-lg-6">
-                  <div class="card border-0 h-100 py-2">
-                    <div class="card-body">
-                      <h4 class="section-header pb-3">
-                        My Groups <img src="img/card-dots.svg" alt="" />
-                      </h4>
-                      <table class="table table-borderless">
-                        <thead class="table-head">
-                          <tr>
-                            <th scope="col" class="th">Group Name</th>
-                            <th scope="col" class="th">No of Members</th>
-                            <th scope="col" class="th">Amount Contributed</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="td">Friends Helping Friends</td>
-                            <td class="td">10 Members</td>
-                            <td class="td">₦1,025,000</td>
-                          </tr>
-                          <tr>
-                            <td class="td">Green Earth Society</td>
-                            <td class="td">20 Members</td>
-                            <td class="td">₦2,050,000</td>
-                          </tr>
-                          <tr>
-                            <td class="td">Health and Wellness Group</td>
-                            <td class="td">15 Members</td>
-                            <td class="td">₦1,537,500</td>
-                          </tr>
-                          <tr>
-                            <td class="td">Local Business Association</td>
-                            <td class="td">30 Members</td>
-                            <td class="td">₦5,125,000</td>
-                          </tr>
-                          <tr>
-                            <td class="td">Creative Collaborators</td>
-                            <td class="td">40 Members</td>
-                            <td class="td">₦1,025,000</td>
-                          </tr>
-                          <tr>
-                            <td class="td">Education Empowerment Group</td>
-                            <td class="td">60 Members</td>
-                            <td class="td">₦3,250,000</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="card border-0 h-100 py-2">
-                    <div class="card-body">
-                      <h4 class="section-header pb-3">
-                        Contributions <img src="img/card-dots.svg" alt="" />
-                      </h4>
-                      <table class="table table-borderless">
-                        <thead class="table-head">
-                          <tr>
-                            <th scope="col" class="th">Date</th>
-                            <th scope="col" class="th">Amount Contributed</th>
-                            <th scope="col" class="th">Group Name</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="td">9/23/16</td>
-                            <td class="td">₦1,025,000</td>
-                            <td class="td">Friends Helping Friends</td>
-                          </tr>
-                          <tr>
-                            <td class="td">12/4/17</td>
-                            <td class="td">₦2,050,000</td>
-                            <td class="td">Green Earth Society</td>
-                          </tr>
-                          <tr>
-                            <td class="td">3/4/16</td>
-                            <td class="td">₦1,537,500</td>
-                            <td class="td">Health and Wellness Group</td>
-                          </tr>
-                          <tr>
-                            <td class="td">5/27/15</td>
-                            <td class="td">₦5,125,000</td>
-                            <td class="td">Local Business Association</td>
-                          </tr>
-                          <tr>
-                            <td class="td">5/27/15</td>
-                            <td class="td">₦1,025,000</td>
-                            <td class="td">Creative Collaborators</td>
-                          </tr>
-                          <tr>
-                            <td class="td">9/4/12</td>
-                            <td class="td">₦3,250,000</td>
-                            <td class="td">Education Empowerment Group</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row pt-4 pb-3">
                 <div class="col-lg-12">
-                  <div class="card border-0 h-100 py-2">
+                  <div class="card border-0">
                     <div class="card-body">
-                      <h4 class="section-header pb-3">
-                        Projects <img src="img/card-dots.svg" alt="" />
-                      </h4>
-                      <table class="table table-borderless">
-                        <thead class="table-head">
-                          <tr>
-                            <th scope="col" class="th">Project Name</th>
-                            <th scope="col" class="th">Description</th>
-                            <th scope="col" class="th">Project Status</th>
-                            <th scope="col" class="th">Target Amount Needed</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="td">Clean Water Initiative</td>
-                            <td class="td">
-                              This project aims to provide access to clean water
-                              for a rural community in Nigeria.
-                            </td>
-                            <td class="td d-flex">
-                              <input
-                                type="range"
-                                class="form-control-range"
-                                id="formControlRange"
-                                value="40"
-                              /><span class="td ml-3 percentage">40%</span>
-                            </td>
-                            <td class="td">₦3,250,000</td>
-                          </tr>
-                          <tr>
-                            <td class="td">Women's Empowerment Project</td>
-                            <td class="td">
-                              This project aims to provide vocational training
-                              and start-up capital for women entrepreneurs in
-                              Lagos.
-                            </td>
-                            <td class="td d-flex">
-                              <input
-                                type="range"
-                                class="form-control-range"
-                                id="formControlRange"
-                                value="50"
-                              /><span class="td ml-3 percentage">50%</span>
-                            </td>
-                            <td class="td">₦1,000,000</td>
-                          </tr>
-                          <tr>
-                            <td class="td">Youth Sports Program</td>
-                            <td class="td">
-                              This project aims to provide sports equipment and
-                              training for underprivileged youth in Abuja.
-                            </td>
-                            <td class="td d-flex">
-                              <input
-                                type="range"
-                                class="form-control-range"
-                                id="formControlRange"
-                                value="20"
-                              /><span class="td ml-3 percentage">20%</span>
-                            </td>
-                            <td class="td">₦7,250,000</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="table_wrapper pt-4">
+                        <table
+                          class="table table-borderless table-hover"
+                          id="table"
+                        >
+                          <thead>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td>Invite ID</td>
+                              <td>Date Sent</td>
+                              <td>Sender Name</td>
+                              <td>Sender Email</td>
+                              <td>Status</td>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody></tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -643,5 +422,18 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/app.js"></script>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script>
+      $.extend(true, $.fn.dataTable.defaults, {
+        searching: true,
+        ordering: false,
+      });
+      $(document).ready(function () {
+        $("#table").DataTable();
+      });
+    </script>
   </body>
 </html>
