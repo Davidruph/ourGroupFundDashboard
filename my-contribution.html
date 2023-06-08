@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>My Contribution</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Custom styles for this template-->
+    <link href="css/app.css" rel="stylesheet" />
+
+    <!-- css and scripts for tel inputs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <div id="page-top">
+      <!-- Page Wrapper -->
+      <div id="wrapper">
+        <!-- Sidebar -->
+        <ul
+          class="navbar-nav bg-sidebar sidebar sidebar-dark accordion"
+          id="accordionSidebar"
+        >
+          <!-- Sidebar - Brand -->
+          <a
+            class="sidebar-brand d-flex align-items-center justify-content-center mb-4"
+            href="index.html"
+          >
+            <div class="sidebar-brand-icon small-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <div class="sidebar-brand-text mx-3">
+              <img src="img/logo.svg" alt="logo" class="img-fluid" />
+            </div>
+          </a>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider my-0" />
+
+          <!-- Nav Item - Dashboard -->
+          <li class="nav-item menu">
+            <a class="nav-link" href="index.html">
+              <img src="img/dashboard.svg" class="img-fluid" alt="" />
+              <span class="text-dark ml-2 mr-2 mb-2">Dashboard</span></a
+            >
+          </li>
+
+          <!-- Nav Item - menus -->
+          <li class="nav-item menu">
+            <a class="nav-link justify-content-between" href="#">
+              <img src="img/groups.svg" class="img-fluid" alt="" />
+              <span class="text-dark ml-2 mr-2 mb-2">Groups</span></a
+            >
+          </li>
+          <!-- Nav Item - menus -->
+          <li class="nav-item menu">
+            <a class="nav-link" href="group-invites.html">
+              <img src="img/invites.svg" alt="groups" />
+              <span class="text-dark ml-2 mr-2 mb-2">Group Invites</span></a
+            >
+          </li>
+          <!-- Nav Item - menus -->
+          <li class="nav-item active menu">
+            <a class="nav-link" href="my-contribution.html">
+              <img src="img/contributions.svg" alt="contributions" />
+              <span class="text-dark ml-2 mr-2 mb-2">My Contributions</span></a
+            >
+          </li>
+          <!-- Nav Item - menus -->
+          <li class="nav-item menu">
+            <a class="nav-link" href="#">
+              <img src="img/levy.svg" alt="levy" />
+              <span class="text-dark ml-2 mr-2 mb-2">Levy</span></a
+            >
+          </li>
+          <!-- Nav Item - menus -->
+          <li class="nav-item menu">
+            <a class="nav-link" href="#">
+              <img src="img/expenses.svg" alt="expenses" />
+              <span class="text-dark ml-2 mr-2 mb-2">Expenses</span></a
+            >
+          </li>
+          <!-- Nav Item - menus -->
+          <li class="nav-item menu">
+            <a class="nav-link" href="#">
+              <img src="img/settings.svg" alt="settings" />
+              <span class="text-dark ml-2 mr-2 mb-2">Settings</span></a
+            >
+          </li>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider d-none d-md-block" />
+
+          <!-- Sidebar Toggler (Sidebar) -->
+          <div class="text-center d-none d-md-inline">
+            <button
+              class="rounded-circle border-0 bg-warning text-dark"
+              id="sidebarToggle"
+            ></button>
+          </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+          <!-- Main Content -->
+          <div id="content">
+            <!-- Topbar -->
+            <nav
+              class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+            >
+              <!-- Sidebar Toggle (Topbar) -->
+              <button
+                id="sidebarToggleTop"
+                class="btn btn-link d-md-none rounded-circle mr-3"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
+
+              <!-- Topbar Search -->
+              <form
+                class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+              >
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control bg-light border-0 small"
+                    placeholder="Search for..."
+                    aria-label="Search"
+                    aria-describedby="basic-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-warning" type="button">
+                      <i class="fas fa-search fa-sm text-dark"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav ml-auto">
+                <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                <li class="nav-item dropdown no-arrow d-sm-none">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="searchDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-search fa-fw"></i>
+                  </a>
+                  <!-- Dropdown - Messages -->
+                  <div
+                    class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                    aria-labelledby="searchDropdown"
+                  >
+                    <form class="form-inline mr-auto w-100 navbar-search">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control bg-light border-0 small"
+                          placeholder="Search for..."
+                          aria-label="Search"
+                          aria-describedby="basic-addon2"
+                        />
+                        <div class="input-group-append">
+                          <button class="btn btn-warning" type="button">
+                            <i class="fas fa-search fa-sm text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+
+                <!-- Nav Item - Alerts -->
+                <li class="nav-item dropdown no-arrow mx-1">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="alertsDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img src="img/bell.svg" alt="bell" />
+                    <!-- Counter - Alerts -->
+                    <span class="badge badge-danger badge-counter">3+</span>
+                  </a>
+                  <!-- Dropdown - Alerts -->
+                  <div
+                    class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                    aria-labelledby="alertsDropdown"
+                  >
+                    <h6 class="dropdown-header">Alerts Center</h6>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                      <div class="mr-3">
+                        <div class="icon-circle bg-primary">
+                          <i class="fas fa-file-alt text-white"></i>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="small text-gray-500">December 12, 2019</div>
+                        <span class="font-weight-bold"
+                          >A new monthly report is ready to download!</span
+                        >
+                      </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                      <div class="mr-3">
+                        <div class="icon-circle bg-success">
+                          <i class="fas fa-donate text-white"></i>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="small text-gray-500">December 7, 2019</div>
+                        $290.29 has been deposited into your account!
+                      </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                      <div class="mr-3">
+                        <div class="icon-circle bg-warning">
+                          <i class="fas fa-exclamation-triangle text-white"></i>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="small text-gray-500">December 2, 2019</div>
+                        Spending Alert: We've noticed unusually high spending
+                        for your account.
+                      </div>
+                    </a>
+                    <a
+                      class="dropdown-item text-center small text-gray-500"
+                      href="#"
+                      >Show All Alerts</a
+                    >
+                  </div>
+                </li>
+
+                <div class="topbar-divider d-none d-sm-block"></div>
+
+                <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="userDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="img-profile rounded-circle"
+                      src="img/avatar.svg"
+                    />
+                    <span class="ml-2 d-none d-lg-inline text-gray-600 small"
+                      >Douglas McGee</span
+                    >
+                  </a>
+                  <!-- Dropdown - User Information -->
+                  <div
+                    class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                    aria-labelledby="userDropdown"
+                  >
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                      Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                      Settings
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                      Activity Log
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#logoutModal"
+                    >
+                      <i
+                        class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                      ></i>
+                      Logout
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+              <!-- Content Row -->
+              <div class="row justify-content-center pb-3">
+                <div class="col-lg-8">
+                  <div class="card border-0">
+                    <div class="card-body">
+                      <div class="box ml-4 mr-4">
+                        <div
+                          class="d-sm-flex align-items-center justify-content-between mb-4 border-left-warning mt-2"
+                        >
+                          <h1 class="h3 mb-0 text-gray-800 ml-4 pt-2 pb-2">
+                            Personal Information
+                          </h1>
+                        </div>
+                        <br />
+                        <div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label-d"
+                              >First name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control form-control-d"
+                              id="firstname"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label-d"
+                              >Last name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control form-control-d"
+                              id="lastname"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label-d"
+                              >Email address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control form-control-d form-placeholder"
+                              id="email"
+                              aria-describedby="emailHelp"
+                              placeholder="email@domain.com"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label-d"
+                              >Phone</label
+                            ><br />
+                            <input
+                              type="tel"
+                              class="form-control form-control-d"
+                              id="phone"
+                            />
+                          </div>
+
+                          <br />
+
+                          <div
+                            class="d-sm-flex align-items-center justify-content-between mb-4 border-left-warning mt-3 mb-3"
+                          >
+                            <h1
+                              class="h3 mb-0 text-gray-800 ml-4 pt-2 pb-2 contribution"
+                            >
+                              Contribution Information
+                            </h1>
+                          </div>
+
+                          <br />
+
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label-d"
+                              >Contribution Amount</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control form-control-d"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label-d"
+                              >Contribution Type</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control form-control-d"
+                            />
+                          </div>
+
+                          <div class="form-group form-check mb-3 pb-3">
+                            <input
+                              type="checkbox"
+                              class="form-check-input checkbox-form"
+                              id="exampleCheck1"
+                            />
+                            <label
+                              class="form-check-label ml-2 pt-1 privacy-label"
+                              for="exampleCheck1"
+                              >By continuing, you agree to the ComFundMe terms
+                              and privacy policy.</label
+                            >
+                          </div>
+
+                          <button
+                            class="btn w-100 pay-now-button mb-2"
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#staticBackdrop"
+                          >
+                            Pay Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+      <!-- End of Main Content -->
+    </div>
+    <!-- End of Content Wrapper -->
+
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="box ml-3 mr-3">
+              <div
+                class="d-sm-flex justify-content-between mb-4 border-left-warning mt-4"
+              >
+                <h1 class="h3 mb-0 text-gray-700 ml-4 pt-2 pb-2">
+                  Select a payment option
+                </h1>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <br />
+              <!-- nav pills -->
+              <ul
+                class="nav nav-pills mb-3 tab-box"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item ml-3" role="presentation">
+                  <button
+                    class="btn nav-link active"
+                    id="pills-card-tab"
+                    data-toggle="pill"
+                    data-target="#pills-card"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Card
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn nav-link"
+                    id="pills-ussd-tab"
+                    data-toggle="pill"
+                    data-target="#pills-ussd"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    USSD
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn nav-link"
+                    id="pills-bank-tab"
+                    data-toggle="pill"
+                    data-target="#pills-bank"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-bank"
+                    aria-selected="false"
+                  >
+                    Bank
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn nav-link"
+                    id="pills-transfer-tab"
+                    data-toggle="pill"
+                    data-target="#pills-transfer"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-transfer"
+                    aria-selected="false"
+                  >
+                    Bank Transfer
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-card"
+                  role="tabpanel"
+                  aria-labelledby="pills-card-tab"
+                >
+                  <p class="card-details-p pb-3 pt-2">
+                    Enter your card details to pay
+                  </p>
+                  <label for="exampleInputEmail1" class="form-label-d"
+                    >Card Number</label
+                  >
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><img src="img/visa.svg" alt="visa" />
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control form-control-d card-placeholder"
+                      value=".... .... .... 5487"
+                      aria-label="card"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                  <div class="form-row">
+                    <div class="col">
+                      <label for="exampleInputEmail1" class="form-label-d"
+                        >Expiration</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control form-control-d"
+                        value="12 / 24"
+                      />
+                    </div>
+                    <div class="col">
+                      <label for="exampleInputEmail1" class="form-label-d"
+                        >CVV <img src="img/signature.svg" alt=""
+                      /></label>
+                      <input
+                        type="password"
+                        class="form-control form-control-d"
+                        value="..."
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group form-check mb-3 pb-3 pt-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input checkbox-form"
+                      id="exampleCheck1"
+                    />
+                    <label
+                      class="form-check-label ml-2 pt-1 privacy-label"
+                      for="exampleCheck1"
+                      checked
+                      >Save this credit card for future use.</label
+                    >
+                  </div>
+                  <button
+                    class="btn w-100 pay-now-button mb-4"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#staticBackdrop"
+                  >
+                    Pay NGN 24,000.00
+                  </button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-ussd"
+                  role="tabpanel"
+                  aria-labelledby="pills-ussd-tab"
+                >
+                  <p class="ussd-tab-p pb-3">
+                    Dial the <span class="span-bold">Unity Bank</span> USSD code
+                    below on your
+                    <br />
+                    mobile phone to complete the payment
+                  </p>
+                  <p class="ussd-tab-p pb-3">
+                    <span class="span-bold">*7799*000*8536#</span>
+                  </p>
+                  <p class="ussd-tab-p pb-3">
+                    You have 2mins 51 secs left to complete this <br />
+                    payment
+                  </p>
+                  <button
+                    class="btn w-100 pay-now-button mb-4"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#staticBackdrop"
+                  >
+                    I have completed this payment
+                  </button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-bank"
+                  role="tabpanel"
+                  aria-labelledby="pills-bank-tab"
+                >
+                  <p class="card-details-p pb-3 pt-2">
+                    Please choose your bank to begin payment
+                  </p>
+                  <div class="form-group pb-3">
+                    <label for="exampleInputEmail1" class="form-label-d"
+                      >Select Bank</label
+                    ><br />
+                    <select class="form-control form-control-d">
+                      <option selected>Click here to choose</option>
+                      <option value="access">Access Bank</option>
+                      <option value="citibank">Citibank</option>
+                      <option value="diamond">Diamond Bank</option>
+                      <option value="ecobank">Ecobank</option>
+                      <option value="fidelity">Fidelity Bank</option>
+                      <option value="firstbank">First Bank</option>
+                      <option value="fcmb">
+                        First City Monument Bank (FCMB)
+                      </option>
+                      <option value="gtb">Guaranty Trust Bank (GTB)</option>
+                      <option value="heritage">Heritage Bank</option>
+                      <option value="keystone">Keystone Bank</option>
+                      <option value="polaris">Polaris Bank</option>
+                      <option value="providus">Providus Bank</option>
+                      <option value="stanbic">Stanbic IBTC Bank</option>
+                      <option value="standard">Standard Chartered Bank</option>
+                      <option value="sterling">Sterling Bank</option>
+                      <option value="suntrust">Suntrust Bank</option>
+                      <option value="union">Union Bank</option>
+                      <option value="uba">United Bank for Africa (UBA)</option>
+                      <option value="unity">Unity Bank</option>
+                      <option value="wema">Wema Bank</option>
+                      <option value="zenith">Zenith Bank</option>
+                    </select>
+                  </div>
+                  <button
+                    class="btn w-100 pay-now-button mb-4"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#staticBackdrop"
+                  >
+                    Pay NGN 24,000.00
+                  </button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-transfer"
+                  role="tabpanel"
+                  aria-labelledby="pills-transfer-tab"
+                >
+                  <p class="card-details-p pb-3 pt-2">
+                    Proceed to your bank app to complete this transfer
+                  </p>
+                  <div class="form-group">
+                    <label class="label-amount">AMOUNT</label>
+                    <br />
+                    <label class="value">NGN 3802.5</label>
+                  </div>
+                  <hr />
+                  <div class="form-group">
+                    <label class="label-amount">ACCOUNT NUMBER</label>
+                    <br />
+                    <label class="value">0837838367</label>
+                  </div>
+                  <hr />
+                  <div class="form-group">
+                    <label class="label-amount">BANK NAME</label>
+                    <br />
+                    <label class="value">Sterling Bank</label>
+                  </div>
+                  <hr />
+                  <div class="form-group">
+                    <label class="label-amount">BENEFICIARY</label>
+                    <br />
+                    <label class="value">Comfund me</label>
+                  </div>
+                  <hr />
+                  <p class="card-details-p pb-4 pt-2">
+                    The account details is only valid for this specific
+                    transaction and it'll expire by 12:55PM (today)
+                  </p>
+                  <button
+                    class="btn w-100 pay-now-button mb-4"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#staticBackdrop"
+                  >
+                    I have made the transfer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/app.js"></script>
+
+    <!-- scripts for phone inputs -->
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+  </body>
+</html>

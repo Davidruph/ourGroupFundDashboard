@@ -74,14 +74,14 @@
           </li>
           <!-- Nav Item - menus -->
           <li class="nav-item active menu">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="group-invites.html">
               <img src="img/invites.svg" alt="groups" />
               <span class="text-dark ml-2 mr-2 mb-2">Group Invites</span></a
             >
           </li>
           <!-- Nav Item - menus -->
           <li class="nav-item menu">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="my-contribution.html">
               <img src="img/contributions.svg" alt="contributions" />
               <span class="text-dark ml-2 mr-2 mb-2">My Contributions</span></a
             >
@@ -320,8 +320,8 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
               <!-- Page Heading -->
-              <div class="d-flex mb-5">
-                <h1 class="h3 mb-0 text-gray-800">Group Invites</h1>
+              <div class="d-flex mb-5 border-left-warning">
+                <h1 class="h3 mb-0 text-gray-80 ml-4">Group Invites</h1>
                 <span class="ml-3 pt-2 number-heading">| 6</span>
               </div>
 
@@ -335,7 +335,24 @@
                           class="table table-borderless table-hover"
                           id="table"
                         >
-                          <thead>
+                          <thead class="table-head">
+                            <tr>
+                              <th scope="col" class="th">
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </th>
+                              <th scope="col" class="th-invite">Invite ID</th>
+                              <th scope="col" class="th-invite">Date Sent</th>
+                              <th scope="col" class="th-invite">
+                                Recipient Email
+                              </th>
+                              <th scope="col" class="th-invite">Status</th>
+                              <th scope="col" class="th-invite"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
                             <tr>
                               <td>
                                 <input
@@ -343,15 +360,150 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td>Invite ID</td>
-                              <td>Date Sent</td>
-                              <td>Sender Name</td>
-                              <td>Sender Email</td>
-                              <td>Status</td>
-                              <td></td>
+                              <td class="td-invite">1</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
-                          </thead>
-                          <tbody></tbody>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">2</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/declined.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">3</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">4</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">5</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">6</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/pending.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">7</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">8</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">9</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input
+                                  type="checkbox"
+                                  class="select_all_rows td-checkbox"
+                                />
+                              </td>
+                              <td class="td-invite">10</td>
+                              <td class="td-invite">8/2/19</td>
+                              <td class="td-invite">Albertflores@gmail.com</td>
+                              <td>
+                                <img src="img/accepted.svg" alt="accepted" />
+                              </td>
+                              <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
+                            </tr>
+                          </tbody>
                         </table>
                       </div>
                     </div>
