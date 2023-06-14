@@ -9,9 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
-    <title>Group Invites</title>
-
+    <title>Levy</title>
     <!-- Custom fonts for this template-->
     <link
       href="vendor/fontawesome-free/css/all.min.css"
@@ -32,6 +30,7 @@
     <!-- Custom styles for this template-->
     <link href="css/app.css" rel="stylesheet" />
   </head>
+
   <body>
     <div id="page-top">
       <!-- Page Wrapper -->
@@ -53,10 +52,8 @@
               <img src="img/logo.svg" alt="logo" class="img-fluid" />
             </div>
           </a>
-
           <!-- Divider -->
           <hr class="sidebar-divider my-0" />
-
           <!-- Nav Item - Dashboard -->
           <li class="nav-item menu">
             <a class="nav-link" href="index.html">
@@ -64,7 +61,6 @@
               <span class="text-dark ml-2 mr-2 mb-2">Dashboard</span></a
             >
           </li>
-
           <!-- Nav Item - menus -->
           <li class="nav-item menu">
             <a class="nav-link justify-content-between" href="#">
@@ -73,8 +69,8 @@
             >
           </li>
           <!-- Nav Item - menus -->
-          <li class="nav-item active menu">
-            <a class="nav-link" href="group-invites.html">
+          <li class="nav-item menu">
+            <a class="nav-link" href="#">
               <img src="img/invites.svg" alt="groups" />
               <span class="text-dark ml-2 mr-2 mb-2">Group Invites</span></a
             >
@@ -87,8 +83,8 @@
             >
           </li>
           <!-- Nav Item - menus -->
-          <li class="nav-item menu">
-            <a class="nav-link" href="#">
+          <li class="nav-item active menu">
+            <a class="nav-link" href="levy.html">
               <img src="img/levy.svg" alt="levy" />
               <span class="text-dark ml-2 mr-2 mb-2">Levy</span></a
             >
@@ -107,10 +103,8 @@
               <span class="text-dark ml-2 mr-2 mb-2">Settings</span></a
             >
           </li>
-
           <!-- Divider -->
           <hr class="sidebar-divider d-none d-md-block" />
-
           <!-- Sidebar Toggler (Sidebar) -->
           <div class="text-center d-none d-md-inline">
             <button
@@ -120,7 +114,6 @@
           </div>
         </ul>
         <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
           <!-- Main Content -->
@@ -136,7 +129,6 @@
               >
                 <i class="fa fa-bars"></i>
               </button>
-
               <!-- Topbar Search -->
               <form
                 class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
@@ -156,7 +148,6 @@
                   </div>
                 </div>
               </form>
-
               <!-- Topbar Navbar -->
               <ul class="navbar-nav ml-auto">
                 <!-- Nav Item - Search Dropdown (Visible Only XS) -->
@@ -195,7 +186,6 @@
                     </form>
                   </div>
                 </li>
-
                 <!-- Nav Item - Alerts -->
                 <li class="nav-item dropdown no-arrow mx-1">
                   <a
@@ -260,9 +250,7 @@
                     >
                   </div>
                 </li>
-
                 <div class="topbar-divider d-none d-sm-block"></div>
-
                 <!-- Nav Item - User Information -->
                 <li class="nav-item dropdown no-arrow">
                   <a
@@ -316,19 +304,27 @@
               </ul>
             </nav>
             <!-- End of Topbar -->
-
             <!-- Begin Page Content -->
             <div class="container-fluid">
               <!-- Page Heading -->
               <div class="d-flex mb-5 border-left-warning">
-                <h1 class="h3 mb-0 text-gray-80 ml-4">Group Invites</h1>
+                <h1 class="h3 mb-0 text-gray-80 ml-4">Levy</h1>
                 <span class="ml-3 pt-2 number-heading">| 6</span>
               </div>
-
               <!-- Content Row -->
-              <div class="row">
+              <div class="row pb-4">
                 <div class="col-lg-12">
                   <div class="card border-0">
+                    <div class="text-right">
+                      <button
+                        class="btn-add-new btn btn-warning btn-md mt-4 mb-0 mr-3"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#staticBackdrop"
+                      >
+                        <i class="fa fa-plus fa-sm mr-2"></i> New Levy
+                      </button>
+                    </div>
                     <div class="card-body">
                       <div class="table_wrapper pt-4">
                         <table
@@ -343,13 +339,15 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </th>
-                              <th scope="col" class="th-invite">Invite ID</th>
-                              <th scope="col" class="th-invite">Date Sent</th>
+                              <th scope="col" class="th-invite">Levy Type</th>
+                              <th scope="col" class="th-invite">Amount</th>
                               <th scope="col" class="th-invite">
-                                Recipient Email
+                                Recipient/RSVP/Contact
                               </th>
-                              <th scope="col" class="th-invite">Status</th>
-                              <th scope="col" class="th-invite"></th>
+                              <th scope="col" class="th-invite">End Date</th>
+                              <th scope="col" class="th-invite">
+                                <img src="img/actions.svg" alt="actions" />
+                              </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -360,12 +358,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">1</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -375,12 +371,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">2</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/declined.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -390,12 +384,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">3</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -405,12 +397,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">4</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -420,12 +410,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">5</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -435,12 +423,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">6</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/pending.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -450,12 +436,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">7</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -465,12 +449,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">8</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -480,12 +462,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">9</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                             <tr>
@@ -495,12 +475,10 @@
                                   class="select_all_rows td-checkbox"
                                 />
                               </td>
-                              <td class="td-invite">10</td>
-                              <td class="td-invite">8/2/19</td>
-                              <td class="td-invite">Albertflores@gmail.com</td>
-                              <td>
-                                <img src="img/accepted.svg" alt="accepted" />
-                              </td>
+                              <td class="td-invite">Monthly dues</td>
+                              <td class="td-invite">₦10,000</td>
+                              <td class="td-invite">(406) 555-0120</td>
+                              <td class="td-invite">7/27/13</td>
                               <td><i class="fa fa-ellipsis-v fa-1x"></i></td>
                             </tr>
                           </tbody>
@@ -518,14 +496,11 @@
       <!-- End of Main Content -->
     </div>
     <!-- End of Content Wrapper -->
-
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
     <div
       class="modal fade"
@@ -565,16 +540,110 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="box ml-3 mr-3">
+              <div
+                class="d-sm-flex justify-content-between mb-4 border-left-warning mt-4"
+              >
+                <h1 class="h3 mb-0 text-gray-700 ml-4 pt-2">Create New Levy</h1>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <br />
+              <p class="card-details-p pb-3">
+                Add details below to create a new levy type.
+              </p>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label-d"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-d"
+                  placeholder="Enter levy name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label-d"
+                  >Purpose</label
+                >
+                <textarea
+                  type="text"
+                  class="form-control form-textarea"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label-d"
+                  >Levy Amount</label
+                >
+                <input
+                  type="number"
+                  class="form-control form-control-d"
+                  placeholder="Eg. 5000"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label-d"
+                  >Recipient/RSVP/Contact</label
+                >
+                <input type="text" class="form-control form-control-d" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label-d"
+                  >End Date</label
+                >
+                <input
+                  type="date"
+                  class="form-control form-control-d"
+                  placeholder="Enter levy name"
+                />
+              </div>
+              <hr class="mt-4 mb-2" />
+              <div class="d-flex float-right mb-2">
+                <button
+                  class="btn-close border btn btn-default btn-md mt-4 mb-0"
+                  type="button"
+                  data-dismiss="modal"
+                >
+                  cancel
+                </button>
+                <button
+                  class="btn-add-new btn btn-warning btn-md mt-4 mb-0 ml-3"
+                  type="submit"
+                >
+                  Create new group
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="js/app.js"></script>
-
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script>

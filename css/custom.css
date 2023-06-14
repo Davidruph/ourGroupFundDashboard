@@ -107,7 +107,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   color: #373435;
 }
@@ -116,7 +116,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 13px;
   color: #373435;
 }
 .form-label-d {
@@ -131,6 +131,9 @@
   height: 48px !important;
   background: #ffffff;
   border: 1px solid #e2e8f0 !important;
+  border-radius: 2px !important;
+}
+.form-textarea {
   border-radius: 2px !important;
 }
 .form-placeholder {
@@ -244,5 +247,47 @@
   font-weight: bold !important;
   font-size: 16px;
   line-height: 16px;
+  color: #373435;
+}
+.btn-add-new {
+  background: #e4a200 !important;
+  border-radius: 2px !important;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff !important;
+  width: 180px !important;
+}
+.btn-close {
+  width: 78px;
+  height: 36px;
+  background: #ffffff !important;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #797778 !important;
+  border-radius: 2px !important;
+}
+.group-card-head {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #373435;
+}
+.span-group {
+  color: #e4a200;
+}
+.group-card-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
   color: #373435;
 }
