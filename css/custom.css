@@ -1,4 +1,20 @@
-.bg-sidebar {
+<div
+  class="text-center"
+  > <div
+  class="bg-light"
+  > <div
+  class="p-4"
+  > <button
+  class="btn-close border btn btn-default btn-md mb-0 w-auto"
+  type="button"
+  data-dismiss="modal"
+  > Cancel
+  </button
+  > <button
+  class="btn-delete btn btn-md mb-0 ml-3 w-auto"
+  type="submit"
+  > Yes,
+delete </button > </div > </div > </div > .bg-sidebar {
   background: #ffffff !important;
 }
 .text-p-card {
@@ -290,4 +306,50 @@
   font-size: 12px;
   line-height: 20px;
   color: #373435;
+}
+.link-copy {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e4a200;
+}
+.btn-delete {
+  width: 104px;
+  height: 36px;
+  background: #f43f5e !important;
+  border-radius: 2px !important;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff !important;
+}
+.delete-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #797778;
+}
+.delete-caption {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #5f5d5d;
+}
+.action-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #334155;
 }
