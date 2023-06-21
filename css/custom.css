@@ -1,20 +1,4 @@
-<div
-  class="text-center"
-  > <div
-  class="bg-light"
-  > <div
-  class="p-4"
-  > <button
-  class="btn-close border btn btn-default btn-md mb-0 w-auto"
-  type="button"
-  data-dismiss="modal"
-  > Cancel
-  </button
-  > <button
-  class="btn-delete btn btn-md mb-0 ml-3 w-auto"
-  type="submit"
-  > Yes,
-delete </button > </div > </div > </div > .bg-sidebar {
+.bg-sidebar {
   background: #ffffff !important;
 }
 .text-p-card {
@@ -349,7 +333,131 @@ delete </button > </div > </div > </div > .bg-sidebar {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px !important;
   line-height: 16px;
   color: #334155;
+}
+.profile-header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #373435;
+}
+.profile-email {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #797778;
+}
+.profile-phone {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #797778;
+}
+.profile-label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5f5d5d;
+}
+.profile-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #797778;
+}
+.label-checkbox {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #797778;
+}
+.form-check-input {
+  accent-color: #e4a200;
+}
+.table-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #373435;
+}
+.table-label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5f5d5d;
+}
+.table-label-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #797778;
+}
+.settings-header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #334155;
+}
+.settings-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+}
+.settings-label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #797778;
+}
+.settings-input {
+  height: 36px !important;
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 2px !important;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #797778;
+}
+.settings-textarea {
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 2px !important;
+}
+.settings-label2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #797778;
 }
