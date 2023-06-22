@@ -33,12 +33,17 @@
   background-color: #fcf6e6;
 }
 
-.menu:hover object svg path,
-.menu.active object svg path,
+.menu:hover img,
+.menu.active img {
+  filter: invert(63%) sepia(25%) saturate(2521%) hue-rotate(8deg)
+    brightness(98%) contrast(102%);
+}
+
 .menu:hover span,
 .menu.active span {
   color: #e4a200 !important;
 }
+
 .topbar .dropdown-list .dropdown-header {
   background-color: #e4a200 !important;
   border: 1px solid #e4a200 !important;
